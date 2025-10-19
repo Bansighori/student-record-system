@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f7fa;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+input, button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #aaa;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: #005ea6;
+}

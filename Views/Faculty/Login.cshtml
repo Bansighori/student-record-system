@@ -1,0 +1,45 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Login</title>
+    <link rel="stylesheet" href="~/css/auth.css" />
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="auth-wrapper">
+        <div class="auth-box">
+            <h2>Faculty Login</h2>
+
+            @if(ViewBag.Error != null)
+            {
+                <p class="error">@ViewBag.Error</p>
+            }
+
+            @if(TempData["Message"] != null)
+            {
+                <p class="message">@TempData["Message"]</p>
+            }
+
+            <form asp-action="Login" method="post">
+                <div class="input-group">
+                    <input type="text" name="Username" placeholder="Enter Username" required />
+                </div>
+                <div class="input-group">
+                    <input type="password" name="Password" placeholder="Enter Password" required />
+                </div>
+                <button type="submit">Login</button>
+            </form>
+
+            <p class="switch-page">
+                Don’t have an account? <a asp-action="Register">Register here</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
